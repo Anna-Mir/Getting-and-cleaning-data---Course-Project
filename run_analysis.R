@@ -14,16 +14,16 @@ unzip(zipfile="./data/Dataset.zip",exdir="./data")
       x_train <- read.table("./data/UCI HAR Dataset/train/X_train.txt")
       y_train <- read.table("./data/UCI HAR Dataset/train/y_train.txt")
       subject_train <- read.table("./data/UCI HAR Dataset/train/subject_train.txt")
-      
-    ### Reading testing tables:
+
+     ### Reading testing tables:
       x_test <- read.table("./data/UCI HAR Dataset/test/X_test.txt")
       y_test <- read.table("./data/UCI HAR Dataset/test/y_test.txt")
       subject_test <- read.table("./data/UCI HAR Dataset/test/subject_test.txt")
-      
-    ### Reading feature vector:
+
+     ### Reading feature vector:
       features <- read.table('./data/UCI HAR Dataset/features.txt')
-      
-    ### Reading activity labels:
+
+     ### Reading activity labels:
       activityLabels = read.table('./data/UCI HAR Dataset/activity_labels.txt')
       
   ## Assigning column names:
@@ -34,7 +34,6 @@ unzip(zipfile="./data/Dataset.zip",exdir="./data")
       colnames(x_test) <- features[,2] 
       colnames(y_test) <- "activityId"
       colnames(subject_test) <- "subjectId"
-      
       colnames(activityLabels) <- c('activityId','activityType')
       
   ## Merging all data in one set:
