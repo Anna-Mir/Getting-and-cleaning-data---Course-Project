@@ -7,4 +7,4 @@ The file CodeBook.md describes the data and variables in use.
 
 The file run_analysis.R contains the mentioned in the task code in R to perform the requested analysis in 5 steps. 
 
-The output of the 5th step named TidyDataSet.txt and uploaded as well.
+The output of the 5th step is available as TidyDataSet file.
